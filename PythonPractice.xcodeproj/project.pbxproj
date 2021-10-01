@@ -7,35 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41FC5C7F270741C700CE0CF1 /* PythonPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5C6F270741C600CE0CF1 /* PythonPracticeApp.swift */; };
 		41FC5C80270741C700CE0CF1 /* PythonPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5C6F270741C600CE0CF1 /* PythonPracticeApp.swift */; };
-		41FC5C81270741C700CE0CF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5C70270741C600CE0CF1 /* ContentView.swift */; };
 		41FC5C82270741C700CE0CF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5C70270741C600CE0CF1 /* ContentView.swift */; };
-		41FC5C83270741C700CE0CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41FC5C71270741C700CE0CF1 /* Assets.xcassets */; };
 		41FC5C84270741C700CE0CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41FC5C71270741C700CE0CF1 /* Assets.xcassets */; };
+		41FC5C922707427F00CE0CF1 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 41FC5C912707427F00CE0CF1 /* PythonKit */; };
+		41FC5C94270742D500CE0CF1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5C93270742D500CE0CF1 /* Extensions.swift */; };
+		41FC5C962707438700CE0CF1 /* MyPythonScript.py in Resources */ = {isa = PBXBuildFile; fileRef = 41FC5C952707438700CE0CF1 /* MyPythonScript.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41FC5C6F270741C600CE0CF1 /* PythonPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonPracticeApp.swift; sourceTree = "<group>"; };
 		41FC5C70270741C600CE0CF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41FC5C71270741C700CE0CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		41FC5C76270741C700CE0CF1 /* PythonPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PythonPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FC5C7C270741C700CE0CF1 /* PythonPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PythonPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FC5C7E270741C700CE0CF1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		41FC5C93270742D500CE0CF1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		41FC5C952707438700CE0CF1 /* MyPythonScript.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = MyPythonScript.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		41FC5C73270741C700CE0CF1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41FC5C79270741C700CE0CF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FC5C922707427F00CE0CF1 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +43,7 @@
 				41FC5C6E270741C600CE0CF1 /* Shared */,
 				41FC5C7D270741C700CE0CF1 /* macOS */,
 				41FC5C77270741C700CE0CF1 /* Products */,
+				41FC5C902707427F00CE0CF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +53,8 @@
 				41FC5C6F270741C600CE0CF1 /* PythonPracticeApp.swift */,
 				41FC5C70270741C600CE0CF1 /* ContentView.swift */,
 				41FC5C71270741C700CE0CF1 /* Assets.xcassets */,
+				41FC5C93270742D500CE0CF1 /* Extensions.swift */,
+				41FC5C952707438700CE0CF1 /* MyPythonScript.py */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -64,7 +62,6 @@
 		41FC5C77270741C700CE0CF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41FC5C76270741C700CE0CF1 /* PythonPractice.app */,
 				41FC5C7C270741C700CE0CF1 /* PythonPractice.app */,
 			);
 			name = Products;
@@ -78,26 +75,16 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		41FC5C902707427F00CE0CF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41FC5C75270741C700CE0CF1 /* PythonPractice (iOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 41FC5C87270741C700CE0CF1 /* Build configuration list for PBXNativeTarget "PythonPractice (iOS)" */;
-			buildPhases = (
-				41FC5C72270741C700CE0CF1 /* Sources */,
-				41FC5C73270741C700CE0CF1 /* Frameworks */,
-				41FC5C74270741C700CE0CF1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "PythonPractice (iOS)";
-			productName = "PythonPractice (iOS)";
-			productReference = 41FC5C76270741C700CE0CF1 /* PythonPractice.app */;
-			productType = "com.apple.product-type.application";
-		};
 		41FC5C7B270741C700CE0CF1 /* PythonPractice (macOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41FC5C8A270741C700CE0CF1 /* Build configuration list for PBXNativeTarget "PythonPractice (macOS)" */;
@@ -111,6 +98,9 @@
 			dependencies = (
 			);
 			name = "PythonPractice (macOS)";
+			packageProductDependencies = (
+				41FC5C912707427F00CE0CF1 /* PythonKit */,
+			);
 			productName = "PythonPractice (macOS)";
 			productReference = 41FC5C7C270741C700CE0CF1 /* PythonPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -125,9 +115,6 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					41FC5C75270741C700CE0CF1 = {
-						CreatedOnToolsVersion = 13.0;
-					};
 					41FC5C7B270741C700CE0CF1 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -142,50 +129,37 @@
 				Base,
 			);
 			mainGroup = 41FC5C69270741C600CE0CF1;
+			packageReferences = (
+				41FC5C8D2707426100CE0CF1 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 41FC5C77270741C700CE0CF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41FC5C75270741C700CE0CF1 /* PythonPractice (iOS) */,
 				41FC5C7B270741C700CE0CF1 /* PythonPractice (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		41FC5C74270741C700CE0CF1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				41FC5C83270741C700CE0CF1 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41FC5C7A270741C700CE0CF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				41FC5C84270741C700CE0CF1 /* Assets.xcassets in Resources */,
+				41FC5C962707438700CE0CF1 /* MyPythonScript.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		41FC5C72270741C700CE0CF1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				41FC5C81270741C700CE0CF1 /* ContentView.swift in Sources */,
-				41FC5C7F270741C700CE0CF1 /* PythonPracticeApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41FC5C78270741C700CE0CF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				41FC5C82270741C700CE0CF1 /* ContentView.swift in Sources */,
+				41FC5C94270742D500CE0CF1 /* Extensions.swift in Sources */,
 				41FC5C80270741C700CE0CF1 /* PythonPracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,67 +278,6 @@
 			};
 			name = Release;
 		};
-		41FC5C88270741C700CE0CF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZM643ZAM97;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sturdysturge.PythonPractice;
-				PRODUCT_NAME = PythonPractice;
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		41FC5C89270741C700CE0CF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZM643ZAM97;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sturdysturge.PythonPractice;
-				PRODUCT_NAME = PythonPractice;
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		41FC5C8B270741C700CE0CF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -433,15 +346,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41FC5C87270741C700CE0CF1 /* Build configuration list for PBXNativeTarget "PythonPractice (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				41FC5C88270741C700CE0CF1 /* Debug */,
-				41FC5C89270741C700CE0CF1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		41FC5C8A270741C700CE0CF1 /* Build configuration list for PBXNativeTarget "PythonPractice (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -452,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41FC5C8D2707426100CE0CF1 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41FC5C912707427F00CE0CF1 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41FC5C8D2707426100CE0CF1 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 41FC5C6A270741C600CE0CF1 /* Project object */;
 }
